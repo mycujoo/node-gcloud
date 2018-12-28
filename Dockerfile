@@ -1,6 +1,6 @@
-FROM node:8.11
+FROM node:10.15
 
-ENV YARN_VERSION 1.6.0
+ENV YARN_VERSION 1.12.3
 
 RUN curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz" \
     && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/ \
